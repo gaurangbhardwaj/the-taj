@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Menu</title>
+
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="cssheader.css" />
+
+    <link rel="stylesheet" type="text/css" href="sidenav.css" />
+
+    <script type="text/javascript" src="cart.js"></script>
+
+    <script type="text/javascript" src="header.js"></script>
+
+    <script>
+
+        function chinese()
+        {
+            document.getElementById("thaimenu").hidden = true;
+            document.getElementById("italianmenu").hidden = true;
+            document.getElementById("indianmenu").hidden = true;
+            document.getElementById("chinesemenu").hidden = false;
+        }
+
+        function indian()
+        {
+            document.getElementById("thaimenu").hidden = true;
+            document.getElementById("italianmenu").hidden = true;
+            document.getElementById("chinesemenu").hidden = true;
+            document.getElementById("indianmenu").hidden = false;
+        }
+
+        function italian()
+        {
+            document.getElementById("thaimenu").hidden = true;
+            document.getElementById("indianmenu").hidden = true;
+            document.getElementById("chinesemenu").hidden = true;
+            document.getElementById("italianmenu").hidden = false;
+        }
+
+        function thai()
+        {
+            document.getElementById("italianmenu").hidden = true;
+            document.getElementById("indianmenu").hidden = true;
+            document.getElementById("chinesemenu").hidden = true;
+            document.getElementById("thaimenu").hidden = false;
+        }
+
+
+
+    </script>
+    
+    <link rel="stylesheet" href="button&inputstyle.css" />
+
+    <link rel="stylesheet" href="menustyle.css"/>
+
+</head>
+<body style="background-color:white;" onload="hidenav();">
+    <header class="headerstyle" style="font-family:Arial; font-size:25px;">
+
+        <span style="font-size:30px; cursor:pointer; float:left;" onclick="openNav()">&#9776;</span>
+        <img src="headerlogo.png" height="35" width="35"/>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="menu.html">Home</a>
+        <a href="book-table.html">Book-Table</a>
+        <a href="#" onclick="mycart();">MyCart</a>
+        <a href="#" onclick="checkout();">Checkout</a>
+        <a href="feedfrm.html">Feedback</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div style="margin:auto; font-family:Arial; ">
+        <center>
+            <div id="sidenavg">
+                <div id="wowslider-container1">
+                    <div class="ws_images">
+                        <ul>
+                            <li><img src="data1/images/chinese.jpg" alt="Chefs all over world make the best contential" title="Chefs all over world make the best contential" id="wows1_0" /></li>
+                            <li><img src="data1/images/slide1.jpg" alt="Experince best dining in Taj" title="Experince best dining in Taj" id="wows1_1" /></li>
+                            <li><img src="data1/images/98756ecb7454d2b02672973800cf99bd.img.jpg" alt="Curries from all over world" title="Curries from all over world" id="wows1_2" /></li>
+                            <li><img src="data1/images/tajblueginger7600.jpg" title="Experince Bars & Lounge" id="wows1_3" /></a></li>
+                            <li><img src="data1/images/taj0290loress.jpg" alt="Taj Buffet" title="Taj Buffet" id="wows1_4" /></li>
+                        </ul>
+                    </div>
+                    <div class="ws_bullets">
+                        <div>
+                            <a href="#" title="Chefs all over world make the best contential"><span><img src="data1/tooltips/chinese.jpg" alt="Chefs all over world make the best contential" />1</span></a>
+                            <a href="#" title="Experince best dining in Taj"><span><img src="data1/tooltips/slide1.jpg" alt="Experince best dining in Taj" />2</span></a>
+                            <a href="#" title="Curries from all over world"><span><img src="data1/tooltips/98756ecb7454d2b02672973800cf99bd.img.jpg" alt="Curries from all over world" />3</span></a>
+                            <a href="#" title="Experince Bars & Lounge"><span><img src="data1/tooltips/tajblueginger7600.jpg" alt="Experince Bars & Lounge" />4</span></a>
+                            <a href="#" title="Taj Buffet"><span><img src="data1/tooltips/taj0290loress.jpg" alt="Taj Buffet" />5</span></a>
+                        </div>
+                    </div>
+                    <div class="ws_shadow"></div>
+                </div>
+                <script type="text/javascript" src="engine1/wowslider.js"></script>
+                <script type="text/javascript" src="engine1/script.js"></script>
+            </div>
+        </center>
+        <br />
+
+            <div class="menudiv">
+                Chinese<button type="button" class="myButton" style="background-size: 100%; float:right" onclick="chinese();" >+</button><br />      
+            </div>
+               <div id="chinesemenu" class="menudiv" style="background-image:url(chinesenoodels.jpg); background-repeat:no-repeat" hidden>
+                   Noodels<button type="button" onclick="add('Noodels', '590');" class="myButton" style="float:right">Rs.590</button><br /><br />
+                   Dumplings<button type="button" onclick="add('Dumplings', '380');" class="myButton" style="float:right">Rs.380</button><br /><br />
+                   Roasted-Duck<button type="button" onclick="add('Roasted-Duck', '590');" class="myButton" style="float:right">Rs.590</button><br /><br />
+                   Spring-Rolls<button type="button" onclick="add('Spring-Rolls', '590');" class="myButton" style="float:right">Rs.590</button><br /><br />
+               </div>
+            <br/>
+
+            <div class="menudiv">
+                Indian<button type="button" class="myButton" style="background-size: 100%; float:right" onclick="indian();" >+</button><br />
+            </div>
+            <div id="indianmenu" class="menudiv" style="background-image:url(Chole-Bhature.jpg); background-repeat:no-repeat" hidden>
+                Chole-Bhature<button type="button" onclick="add('Chole-Bhature', '390');" class="myButton" style="float:right">Rs.390</button><br /><br />
+                Pav-Bhaji<button type="button"  onclick="add('Pav-Bhaji', '390');" class="myButton" style="float:right">Rs.390</button><br /><br />
+                Butter-Milk<button type="button" onclick="add('Butter-Milk', '260');" class="myButton" style="float:right">Rs.260</button><br /><br />
+                Stuff-Pyramids<button type="button" onclick="add('Stuff-Pyramids', '290');" class="myButton" style="float:right">Rs.290</button><br /><br />
+            </div>
+            <br />
+           
+             <div class="menudiv">
+                Italian<button type="button" class="myButton" style="background-size: 100%; float:right" onclick="italian();" >+</button><br />
+            </div>
+            <div id="italianmenu" class="menudiv" style="background-image:url(pizza.png); background-repeat:no-repeat" hidden>
+                Taj-Pizza<button type="button" onclick="add('Taj-Pizza', '1200');" class="myButton" style="float:right">Rs.1200</button><br /><br />
+                Pasta W/R<button type="button" onclick="add('Pasta W/R', '700');" class="myButton" style="float:right">Rs.700</button><br /><br />
+                Spaghetti<button type="button" onclick="add('Spaghetti', '680');" class="myButton" style="float:right">Rs.680</button><br /><br />
+                Meatball<button type="button" onclick="add('Meatball', '990');" class="myButton" style="float:right">Rs.990</button><br /><br />
+            </div>
+            <br />
+
+            <div class="menudiv">
+                Thai<button type="button" class="myButton" style="background-size: 100%;float:right" onclick="thai();" >+</button><br />
+            </div>
+            <div id="thaimenu" class="menudiv" style="background-image:url(tom-yam.jpg); background-repeat:no-repeat" hidden>
+                Gaeng Daeng<button type="button" onclick="add('Gaeng Daeng', '870');" class="myButton" style="float:right">Rs.870</button><br /><br />
+                Khao Pad<button type="button" onclick="add('Khao Pad', '560');" class="myButton" style="float:right">Rs.560</button><br /><br />
+                Panang Gai<button type="button" onclick="add('Panang Gai', '900');" class="myButton" style="float:right">Rs.900</button><br /><br />
+                Gang Jued<button type="button" onclick="add('Gang Jued', '320');" class="myButton" style="float:right">Rs.320</button><br /><br />
+            </div>
+
+        </div>
+
+</body>
+</html>

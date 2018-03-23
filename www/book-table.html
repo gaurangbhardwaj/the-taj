@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Portal:Table Booking</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="cssheader.css" />
+
+    <link rel="stylesheet" type="text/css" href="sidenav.css" />
+
+    <link rel="stylesheet" type="text/css" href="button&inputstyle.css" />
+
+    <script>
+        function book()
+        {
+            if (document.getElementById("table").value == "non" || document.getElementById("persons").value == "non" || document.getElementById("time").value == "non")
+            {
+                document.getElementById("msg").hidden = false;
+            }
+            else
+            {
+                alert("Table has been booked sucessfully.");
+                window.location = 'menu.html';
+            }
+            
+        }
+    </script>
+
+
+
+    <script type="text/javascript" src="header.js"></script>
+</head>
+<body>
+
+    <header class="headerstyle" style="font-family:Arial; font-size:25px;">
+
+        <span style="font-size:30px; cursor:pointer; float:left;" onclick="openNav()">&#9776;</span>
+        <img src="headerlogo.png" height="35" width="35" />
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="menu.html">Home</a>
+        <a href="feedfrm.html">Feedback</a>
+        <a href="index.html">Logout</a>
+
+    </div>
+    <center><h2>Table Booking</h2></center>
+    <div style="margin:10%; color:darkorange; font-size:large; font-family:Arial;">
+        <center>
+            <form>
+               Available Tables&nbsp;:&nbsp;<br />
+                <select id="table" required>
+                    <optgroup label="Taj-Premium">
+                        <option value="non">Select Table</option>
+                        <option value="44">44</option>
+                        <option value="67">67</option>
+                        <option value="78">78</option>
+                    </optgroup>
+                    <optgroup label="Normal">
+                        <option value="2">2</option>
+                        <option value="6">6</option>
+                        <option value="10">10</option>
+                        <option value="36">36</option>
+                    </optgroup>
+                </select>
+                <br />
+                <br/>
+
+                No.of Persons&nbsp;:&nbsp;<br />
+                <select id="persons" required>
+                        <option value="non">Select Persons</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+
+                <br />
+                <br />
+
+                Available Time Slots&nbsp;:&nbsp;<br />
+                <select id="time" required>
+                    <option value="non">Select Time</option>
+                    <option value="11:00-12:00">11:00-12:00</option>
+                    <option value="12:00-13:00">12:00-13:00</option>
+                    <option value="13:00-14:00">13:00-14:00</option>
+                    <option value="14:00-15:00">14:00-15:00</option>
+                    <option value="15:00-16:00">15:00-16:00</option>
+                    <option value="16:00-17:00">16:00-17:00</option>
+                    <option value="17:00-18:00">17:00-18:00</option>
+                </select>
+
+                <br />
+                <br />
+                <br />
+                <input type="checkbox"  value="agree" required/>I agree terms & condition of the table booking.
+
+                <br />
+                <br />
+
+                <button type="button" id="submit" class="myButton" onclick="book();">Book</button><br />
+
+
+</form>
+            
+        </center>
+
+    </div>
+
+    <center>
+        <div id="msg" style="color:red;" hidden>
+            <p>*Please select available table/no. of persons/Time Slot</p>
+        </div>
+    </center>
+</body>
+</html>

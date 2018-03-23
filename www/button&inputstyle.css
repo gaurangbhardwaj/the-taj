@@ -1,0 +1,36 @@
+     input[type=email], input[type=password], input[type=number], input[type=text], select
+{
+    background-color: white;
+    border:solid 1px #BFBDBD;
+    color: black;
+    height: 28px;
+    padding-left:10px;
+    width: 191px;
+    box-shadow: 2px 2px 0 #828181 inset;
+    border: 0;
+    border-radius:5px;
+    font-family: Sansation,Arial;
+}
+
+    .myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:8px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #0a95bf;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

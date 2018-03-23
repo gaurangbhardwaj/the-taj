@@ -1,0 +1,17 @@
+ body {
+    margin: 0;
+    padding:0;
+ }   
+
+ .headerstyle {
+    width:100%;
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:0px;
+    background-color:#44c767; 
+    height:40px;
+    padding:3px;
+     
+
+ }

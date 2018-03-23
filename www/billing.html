@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Your Bill</title>
+
+    <link rel="stylesheet" type="text/css" href="cssheader.css" />
+
+    <link rel="stylesheet" type="text/css" href="button&inputstyle.css" />
+
+    <link rel="stylesheet" type="text/css" href="sidenav.css" />
+
+    <link rel="stylesheet" type="text/css" href="tablestyle.css" />
+
+    <script type="text/javascript" src="header.js"></script>
+    <script type="text/javascript" src="cart.js"></script>
+    
+</head>
+
+
+
+<body style="background-color:white;" onload="myfunction();">
+
+    <header class="headerstyle" style="font-family:Arial; font-size:25px;">
+
+        <span style="font-size:30px; cursor:pointer; float:left;" onclick="openNav()">&#9776;</span>
+        <img src="headerlogo.png" height="35" width="35" />
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="menu.html">Home</a>
+        <a href="book-table.html">Book-Table</a>
+        <a href="feedfrm.html">Feedback</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <center>
+        <h2>Invoice Bill</h2>
+        <br />
+        <table id="myTable" border="1">
+            <tr>
+                <th>Item Name </th>
+                <th> Quantity</th>
+                <th> Price</th>
+            </tr>
+            <tr>
+                <td>Noodels</td>
+                <td>2</td>
+                <td>Rs: 1180</td>
+            </tr>
+            <tr>
+                <td>Chole-Bhature</td>
+                <td>2</td>
+                <td>Rs: 780</td>
+            </tr>
+            <tr>
+                <td>Panang Gai</td>
+                <td>1</td>
+                <td>Rs: 900</td>
+            </tr>
+            <tr>
+            <td colspan="2"><b>Total:</b></td>
+            <td>Rs: 2860</td>
+            </tr>
+        </table>
+        <p style="color:red;">Payment Mode:  
+            <select>
+                <option onclick="s()">Select</option>
+                <option onclick="paytm()">By PayTm</option>
+                <option onclick="bycash()">By Cash</option>
+                <option onclick="bycash()">By Card</option>
+            </select>
+        </p>
+        <p id="p1" hidden> <b>"Payment Successful"</b></p>
+    </center>
+</body>
+
+
+</html>
