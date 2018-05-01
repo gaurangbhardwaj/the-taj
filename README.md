@@ -1,6 +1,6 @@
-# A Blank PhoneGap App
+# A PhoneGap App 
 
-## Usage
+## For Hotel Managment System
 
 ### PhoneGap CLI
 
