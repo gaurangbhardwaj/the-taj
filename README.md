@@ -1,10 +1,11 @@
-# A Hybrid App for Hotel Managment System (Default Taj hotels) 
+# The-Taj
+It is basically a hybrid application build using:
+* HTML5
+* CSS
+* JavaScript
+* jQuery and jQuery Mobile
 
-### PhoneGap CLI
-
-    $ phonegap create my-app --template blank
-
-### Desktop
+### Open in Desktop
 
 In your browser, open the file:
 
