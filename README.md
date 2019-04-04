@@ -1,5 +1,6 @@
 # The-Taj
 It is basically a hybrid application build using:
+* PhoneGap tool (apache cordova)
 * HTML5
 * CSS
 * JavaScript
