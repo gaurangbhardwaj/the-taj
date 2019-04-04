@@ -1,6 +1,4 @@
-# A PhoneGap App 
-
-## For Hotel Managment System
+# A Hybrid App for Hotel Managment System (Default Taj hotels) 
 
 ### PhoneGap CLI
 
